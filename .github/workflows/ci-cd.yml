@@ -16,6 +16,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+      - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
     - name: Build React app
       run: npm run build
 
